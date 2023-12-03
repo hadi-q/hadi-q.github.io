@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+
+<body>
+
+<!-- 1 A link tag loading the Timeline CSS. -->
+<link title="timeline-styles" rel="stylesheet" 
+    href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+
+<!-- 2 A script tag loading the Timeline javascript. -->
+<script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+<div id='timeline-embed' style="width: 100%; height: 600px"></div>
+
+<!-- 3 A second script tag which creates a Timeline. -->
+ <script type="text/javascript">
+            var additionalOptions = {
+                font: 'opensans-gentiumbook'
+            }
+
+            timeline = new TL.Timeline('timeline-embed',
+            'https://docs.google.com/spreadsheets/d/1mvjzZJHv0pRcuff8U-Wy_d3F8apiqMEFJIQf-1i_Wz4/edit#gid=0',
+            additionalOptions);
+ </script>
+ 
+ </body>
